@@ -1,0 +1,29 @@
+.transaction {
+    margin: 0.5rem 0;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+    flex: 1;  
+}
+
+.transaction-item {
+    display: flex;
+    width: 7.5rem;
+    height: 3rem;
+    border: 1px solid #ececec;
+    background-color: rgb(64, 146, 179);
+    color: white;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .transaction-item.points {
+    background-color: rgb(170, 87, 166);
+  }
+  
+  .transaction-item__text {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  

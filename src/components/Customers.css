@@ -1,0 +1,18 @@
+.customers {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    padding: 0.1rem 1.2rem;
+    margin: 1rem 0;
+    background-color: #1d739e;
+    color: white;
+    text-decoration: underline;
+}
+
+@media (min-width: 580px) {
+    .title h2 {
+      font-size: 1.25rem;
+    }  
+}
