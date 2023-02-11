@@ -53,6 +53,11 @@
     },
     {
         "id": "c3",
+        "name": "David Ricardo",
+        "transactions": []
+    },
+    {
+        "id": "c4",
         "name": "Thomas Malthus",
         "transactions": [
             {

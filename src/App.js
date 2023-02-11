@@ -15,15 +15,14 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch('./data/customers.json')    // fake API call
+    /* fake API call */
+    fetch('./data/customers.json')    
         .then((res) => res.json())
         .then((data) => {
-            console.log(data);
             this.setState({
                 items: data,
                 DataisLoaded: true
             });
-            console.log(this.state);
         })
     }
 

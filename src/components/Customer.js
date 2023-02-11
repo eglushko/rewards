@@ -16,6 +16,7 @@ const Customer = (props) => {
     const transactionsOffHandler = () => {
         setTransactionsOn(false);
     };
+    /* Filters transactions by date to get transactions from last three months */
     const filteredTransactions = props.transactions.filter(transaction => {
         transaction.dateOb = new Date (transaction.date);
         return transaction.dateOb > prevDate;
@@ -26,7 +27,7 @@ const Customer = (props) => {
             <div className='customer card'>
                 <div className='customer_name'>
                     <h2>{props.name}</h2>
-                    {!transactionsOn && <button onClick={transactionsOnHandler}>Show Transactions</button>}
+                    {(!transactionsOn && filteredTransactions.length > 0) && <button onClick={transactionsOnHandler}>Show Transactions</button>}
                     {transactionsOn &&<button onClick={transactionsOffHandler}>Hide Transactions</button>}
                 </div>
             </div>
