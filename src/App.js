@@ -37,7 +37,7 @@ class App extends React.Component {
     }
 
     return (
-      <div className='application card'>
+      <div id='application' className='card'>
         <Customers items={items} />
       </div>
     );
